@@ -1,0 +1,32 @@
+import Lenis from "lenis";
+
+export function createSmoothScroll() {
+  const isTouchDevice =
+    typeof window !== "undefined" &&
+    (window.matchMedia("(pointer: coarse)").matches ||
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0);
+
+  const lenis = new Lenis({
+    duration: isTouchDevice ? 1.0 : 1.15,
+    smoothWheel: true,
+    syncTouch: false,
+    wheelMultiplier: 0.85,
+    touchMultiplier: 1.5,
+    infinite: false,
+  });
+
+  let frameId;
+
+  function raf(time) {
+    lenis.raf(time);
+    frameId = requestAnimationFrame(raf);
+  }
+
+  frameId = requestAnimationFrame(raf);
+
+  return () => {
+    cancelAnimationFrame(frameId);
+    lenis.destroy();
+  };
+}
