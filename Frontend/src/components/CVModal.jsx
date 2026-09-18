@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { X, Download, Printer, Mail, MapPin, ExternalLink, Award, Code2, Briefcase, GraduationCap, Trophy } from "lucide-react";
+import { X, Download, Printer, Mail, MapPin } from "lucide-react";
 import { Github, Linkedin } from "./Icons";
-import { personalInfo, techStack, certifications, projects } from "../data/portfolioData";
+import { personalInfo, certifications, projects } from "../data/portfolioData";
 
 export function CVModal({ onClose }) {
   useEffect(() => {
@@ -42,10 +42,11 @@ export function CVModal({ onClose }) {
   };
 
   return (
-    <div className="modal-backdrop cv-modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
+    <div className="modal-backdrop cv-modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" data-lenis-prevent>
       <div 
         className="modal-content cv-modal-content"
         onClick={(e) => e.stopPropagation()}
+        data-lenis-prevent
       >
         {/* Floating Top Header / Action Bar */}
         <div className="cv-toolbar">
@@ -87,7 +88,7 @@ export function CVModal({ onClose }) {
         </div>
 
         {/* Scrollable Printable CV Sheet */}
-        <div className="modal-scroll-area cv-scroll-area">
+        <div className="modal-scroll-area cv-scroll-area" data-lenis-prevent>
           <div className="cv-paper" id="cv-printable-area">
             {/* Header / Intro */}
             <header className="cv-header">

@@ -165,7 +165,7 @@ const ChatPanel = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className={`chat-panel ${isOpen ? 'open' : ''}`}>
+    <div className={`chat-panel ${isOpen ? 'open' : ''}`} data-lenis-prevent>
       {/* Chat Header */}
       <div className="chat-header">
         <div className="chat-header-info">
@@ -201,7 +201,7 @@ const ChatPanel = ({ isOpen, onClose }) => {
       </div>
 
       {/* Suggested Quick Prompts */}
-      <div className="chat-suggestions-bar">
+      <div className="chat-suggestions-bar" data-lenis-prevent>
         {SUGGESTIONS.map((s, idx) => (
           <button
             key={idx}
@@ -215,7 +215,7 @@ const ChatPanel = ({ isOpen, onClose }) => {
       </div>
 
       {/* Chat Messages */}
-      <div className="chat-messages">
+      <div className="chat-messages" data-lenis-prevent>
         {messages.map((msg, idx) => (
           <div key={idx} className={`message-wrapper ${msg.role}`}>
             <div className="message-avatar">

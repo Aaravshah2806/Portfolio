@@ -14,6 +14,14 @@ export function createSmoothScroll() {
     wheelMultiplier: 0.85,
     touchMultiplier: 1.5,
     infinite: false,
+    prevent: (node) => {
+      if (!node || typeof node.closest !== "function") return false;
+      return Boolean(
+        node.closest(
+          "[data-lenis-prevent], [data-lenis-prevent-wheel], .chat-panel, .chat-messages, .chat-suggestions-bar, .modal-backdrop, .modal-content, .modal-scroll-area, .cv-scroll-area, .nav-dropdown"
+        )
+      );
+    },
   });
 
   let frameId;

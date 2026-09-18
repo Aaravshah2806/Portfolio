@@ -48,10 +48,12 @@ export function ProjectModal({ project, onClose }) {
         onClick={onClose}
         role="dialog"
         aria-modal="true"
+        data-lenis-prevent
       >
         <div
           className="modal-content project-modal-content"
           onClick={(e) => e.stopPropagation()}
+          data-lenis-prevent
         >
           <button
             className="modal-close-btn"
@@ -62,7 +64,7 @@ export function ProjectModal({ project, onClose }) {
             <X size={20} />
           </button>
 
-          <div className="modal-scroll-area">
+          <div className="modal-scroll-area" data-lenis-prevent>
             {/* Header with Title & Metadata */}
             <div className="modal-header">
               <div className="modal-meta-row">

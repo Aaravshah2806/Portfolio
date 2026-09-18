@@ -2275,6 +2275,7 @@ button {
   max-height: 90vh;
   max-height: 90dvh;
   overflow-y: auto;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   padding: clamp(18px, 3.5vw, 44px);
 }
@@ -2845,6 +2846,8 @@ button {
 .cv-scroll-area {
   flex: 1;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   padding: 32px clamp(18px, 4vw, 44px) 48px;
 }
 
@@ -3206,6 +3209,7 @@ button {
 
   .nav-dropdown {
     overflow-y: auto;
+    overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
   }
 

@@ -209,6 +209,8 @@
   background: rgba(14, 14, 16, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   overflow-x: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 
@@ -247,6 +249,8 @@
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;

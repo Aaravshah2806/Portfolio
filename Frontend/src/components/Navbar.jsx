@@ -129,6 +129,7 @@ export function Navbar() {
         <div
           className="nav-dropdown"
           id="nav-dropdown"
+          data-lenis-prevent
           style={{ height: isOpen ? `${dropdownHeight}px` : 0 }}
           aria-hidden={!isOpen}
         >
