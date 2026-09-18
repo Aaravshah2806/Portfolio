@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Plus } from "lucide-react";
 import { setupAnimations } from "./lib/animations";
-import { createSmoothScroll } from "./lib/lenis";
+import { createSmoothScroll, scrollToSection } from "./lib/lenis";
 
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
@@ -37,8 +37,33 @@ function App() {
       window.dispatchEvent(new Event("resize"));
     }, 500);
 
+    // Global listener: intercept all in-page anchor clicks (e.g. href="#contact", href="#about")
+    // Ensures smooth scrolling directly on the same page WITHOUT appending #hash to the browser URL
+    const handleGlobalAnchorClick = (e) => {
+      const anchor = e.target.closest('a[href^="#"]');
+      if (!anchor) return;
+
+      const href = anchor.getAttribute("href");
+      if (!href || href === "#") return;
+
+      e.preventDefault();
+      scrollToSection(href);
+    };
+
+    // If loaded with a hash in URL (e.g. from an old link/bookmark), clean URL immediately and scroll down
+    if (window.location.hash) {
+      const targetHash = window.location.hash;
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+      setTimeout(() => {
+        scrollToSection(targetHash);
+      }, 250);
+    }
+
+    document.addEventListener("click", handleGlobalAnchorClick);
+
     return () => {
       clearTimeout(timer);
+      document.removeEventListener("click", handleGlobalAnchorClick);
       destroyAnimations?.();
       destroyLenis?.();
     };
@@ -62,11 +87,17 @@ function App() {
 
       <Footer />
 
-      {/* Floating CTA Button */}
-      <a className="floating-contact" href="#contact" data-cursor-hover>
+      {/* Floating CTA Button: scrolls directly to Contact on same page with clean URL */}
+      <button
+        type="button"
+        className="floating-contact"
+        onClick={() => scrollToSection("contact")}
+        aria-label="Scroll to contact section"
+        data-cursor-hover
+      >
         <Plus size={17} />
         <span>Let&apos;s talk</span>
-      </a>
+      </button>
 
       {/* Interactive Case Study Modal */}
       {selectedProject && (

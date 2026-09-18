@@ -1,9 +1,10 @@
 import { ArrowUp } from "lucide-react";
 import { personalInfo } from "../data/portfolioData";
+import { scrollToSection } from "../lib/lenis";
 
 export function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToSection("top");
   };
 
   const firstName = personalInfo.name ? personalInfo.name.split(" ")[0].toUpperCase() : "AARAV";
