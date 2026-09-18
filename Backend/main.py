@@ -1,5 +1,7 @@
 import os
 import re
+import smtplib
+from email.message import EmailMessage
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -33,6 +35,11 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     message: Optional[str] = None
     messages: Optional[List[ChatMessage]] = None
+
+class ContactRequest(BaseModel):
+    name: str
+    email: str
+    message: str
 
 PREFERRED_MODELS = [
     "openai/gpt-oss-120b",
@@ -104,6 +111,47 @@ async def chat_endpoint(request: ChatRequest):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/contact")
+async def contact_endpoint(req: ContactRequest):
+    name = req.name.strip()
+    email = req.email.strip()
+    message = req.message.strip()
+
+    if not name or not email or not message:
+        raise HTTPException(status_code=400, detail="Name, email, and message are all required.")
+
+    smtp_email = os.environ.get("SMTP_EMAIL", "shahaarav2806@gmail.com")
+    smtp_password = os.environ.get("SMTP_PASSWORD")
+    recipient = os.environ.get("RECIPIENT_EMAIL", "shahaarav2806@gmail.com")
+
+    if not smtp_password:
+        return {
+            "success": False,
+            "message": "SMTP_PASSWORD not configured in backend .env. Set your Gmail 16-character App Password to enable backend email sending."
+        }
+
+    try:
+        msg = EmailMessage()
+        msg["Subject"] = f"Portfolio Inquiry from {name}"
+        msg["From"] = smtp_email
+        msg["To"] = recipient
+        msg["Reply-To"] = email
+        
+        msg.set_content(
+            f"You received a new portfolio inquiry:\n\n"
+            f"Name: {name}\n"
+            f"Email: {email}\n\n"
+            f"Message:\n{message}\n"
+        )
+
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+            server.login(smtp_email, smtp_password)
+            server.send_message(msg)
+
+        return {"success": True, "message": "Email sent successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to send email: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn

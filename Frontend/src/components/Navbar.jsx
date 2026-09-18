@@ -20,16 +20,25 @@ export function Navbar() {
 
   const close = useCallback(() => setIsOpen(false), []);
 
-  /* Measure the mobile dropdown height */
+  /* Measure the dropdown height accurately */
   const measure = useCallback(() => {
-    if (innerRef.current) setDropdownHeight(innerRef.current.offsetHeight);
+    if (innerRef.current) {
+      const h = innerRef.current.scrollHeight || innerRef.current.offsetHeight;
+      setDropdownHeight(Math.max(h, 230));
+    }
   }, []);
 
   useLayoutEffect(() => {
     measure();
-    window.addEventListener("resize", () => { measure(); if (window.innerWidth >= 768) setIsOpen(false); });
+    window.addEventListener("resize", measure);
     return () => window.removeEventListener("resize", measure);
   }, [measure]);
+
+  useEffect(() => {
+    if (isOpen) {
+      measure();
+    }
+  }, [isOpen, measure]);
 
   /* Scroll-based pill shrink */
   useEffect(() => {
@@ -145,7 +154,6 @@ export function Navbar() {
                 data-cursor-hover
               >
                 <span className="nav-link-label">{link.label}</span>
-                {activeLink === link.href && <span className="nav-link-dot" />}
               </a>
             ))}
           </div>

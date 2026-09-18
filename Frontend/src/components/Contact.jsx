@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check } from "lucide-react";
+import { Check, AlertCircle, Loader2 } from "lucide-react";
 import { Github, Instagram, Leetcode, Linkedin } from "./Icons";
 import { personalInfo } from "../data/portfolioData";
 
@@ -8,28 +8,107 @@ export function Contact() {
     name: "",
     email: "",
     message: "",
+    botcheck: "",
   });
 
   const [status, setStatus] = useState("idle"); // 'idle' | 'submitting' | 'success' | 'error'
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+    setErrorMessage("");
+
+    const name = formData.name.trim();
+    const email = formData.email.trim();
+    const message = formData.message.trim();
+
+    if (!name || !email || !message) {
+      setErrorMessage("Please fill out all required fields before submitting.");
       setStatus("error");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage("Please enter a valid email address.");
+      setStatus("error");
+      return;
+    }
+
+    // Bot honeypot: silently reject bot submissions without network calls
+    if (formData.botcheck) {
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "", botcheck: "" });
       return;
     }
 
     setStatus("submitting");
 
-    // Simulate sending with a smooth client-side success response
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }, 800);
+    try {
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      const recipientEmail = personalInfo.email || "shahaarav2806@gmail.com";
+      let response;
+
+      if (accessKey && accessKey.trim() !== "") {
+        // Priority 1: Web3Forms API
+        response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            access_key: accessKey.trim(),
+            name,
+            email,
+            message,
+            from_name: `${name} via Portfolio`,
+            subject: `Portfolio Inquiry from ${name}`,
+            botcheck: formData.botcheck || "",
+          }),
+        });
+      } else {
+        // Priority 2: FormSubmit API direct to recipient email (zero configuration required)
+        response = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+            _subject: `Portfolio Inquiry from ${name}`,
+            _template: "table",
+            _captcha: "false",
+          }),
+        });
+      }
+
+      const result = await response.json().catch(() => ({}));
+
+      if (response.ok && (result.success === true || result.success === "true")) {
+        setStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          botcheck: "",
+        });
+      } else {
+        const errorDetail =
+          result.message ||
+          "Could not send your message right now. Please try again or email directly.";
+        setErrorMessage(errorDetail);
+        setStatus("error");
+      }
+    } catch {
+      setErrorMessage(
+        "Network error occurred. Please check your connection or email directly."
+      );
+      setStatus("error");
+    }
   };
 
   const socials = [
@@ -97,6 +176,18 @@ export function Contact() {
               </div>
             ) : (
               <form className="framer-contact-form" onSubmit={handleSubmit}>
+                {/* Honeypot field for bot protection - hidden from humans */}
+                <input
+                  type="text"
+                  name="botcheck"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={formData.botcheck}
+                  onChange={(e) => setFormData({ ...formData, botcheck: e.target.value })}
+                  style={{ display: "none" }}
+                  aria-hidden="true"
+                />
+
                 <div className="form-group">
                   <label htmlFor="contact-name">Name</label>
                   <input
@@ -135,7 +226,19 @@ export function Contact() {
 
                 {status === "error" && (
                   <div className="form-error-banner-modern">
-                    Please fill out all fields before submitting.
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" }}>
+                      <AlertCircle size={16} />
+                      <span>{errorMessage || "Please fill out all fields before submitting."}</span>
+                    </div>
+                    <div style={{ fontSize: "12px", opacity: 0.85, marginTop: "6px" }}>
+                      Or email directly at{" "}
+                      <a
+                        href={`mailto:${personalInfo.email || "shahaarav2806@gmail.com"}?subject=Project Inquiry&body=Hi Aarav,%0D%0A%0D%0A`}
+                        style={{ color: "#ffffff", textDecoration: "underline" }}
+                      >
+                        {personalInfo.email || "shahaarav2806@gmail.com"}
+                      </a>
+                    </div>
                   </div>
                 )}
 
@@ -144,8 +247,21 @@ export function Contact() {
                   disabled={status === "submitting"}
                   className="contact-submit-btn"
                   data-cursor-hover
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                  }}
                 >
-                  {status === "submitting" ? "Sending..." : "Submit"}
+                  {status === "submitting" ? (
+                    <>
+                      <Loader2 size={18} className="contact-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <span>Submit</span>
+                  )}
                 </button>
               </form>
             )}
