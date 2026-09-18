@@ -23,10 +23,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize Groq client
-client = Groq(
-    api_key=os.environ.get("GROQ_API_KEY"),
-)
+# Initialize Groq client with sanitized key
+def get_groq_client() -> Groq:
+    raw_key = os.environ.get("GROQ_API_KEY", "").strip().strip('"').strip("'")
+    return Groq(api_key=raw_key or None)
+
+client = get_groq_client()
 
 class ChatMessage(BaseModel):
     role: str  # "user", "assistant", "ai", or "system"
@@ -57,7 +59,7 @@ def clean_response(text: str) -> str:
     cleaned = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
     return cleaned.strip()
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def read_root():
     data = load_raw_portfolio_data()
     projects_count = len(data.get("projects", []))

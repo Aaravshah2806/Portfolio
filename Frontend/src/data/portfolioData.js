@@ -1,8 +1,8 @@
 export const personalInfo = {
     name: "Aarav Shah",
-    role: "Student in Computer Science Enginnering",
+    role: "Student in Computer Science Engineering",
     tagline: "Curious about Machines, Coffee and Clean Code",
-    status: "Avaliable for Intership",
+    status: "Available for Internship",
     location: "Mumbai, India",
     timezone: "Asia/Kolkata",
     email: "shahaarav2806@gmail.com",
@@ -17,7 +17,7 @@ export const personalInfo = {
     statement: "From idea to launch. Clean, scalable digital products built to move fast, stay simple, and perform in real-world use, driven by clarity, structured systems, and intentional design.",
     stats: [
         { value: "6+", label: "Projects Completed"},
-        { value: "10+", label: "Particpated in Hackathons"},
+        { value: "10+", label: "Participated in Hackathons"},
         { value: "1", label: "Hackathon Winner" },
         { value: "3+", label: "Domains" }
     ],
@@ -311,49 +311,49 @@ export const projects = [
 export const experience = [
   {
     period: "2024 — PRESENT",
-    role: "Staff Creative Engineer",
-    company: "Studio Hyperion",
-    description: "Leading frontend architecture and interactive design for Fortune 500 product launches and high-scale SaaS applications.",
+    role: "Open Source Developer & Systems Builder",
+    company: "GitHub / Developer Community",
+    description: "Architecting high-performance open-source systems (GreenNova, GameBoy-WebOS, VibeDocs, F1 Replay CLI) leveraging React, FastAPI, Flutter, and local LLM pipelines.",
   },
   {
-    period: "2022 — 2024",
-    role: "Senior Frontend Developer",
-    company: "Nexus Labs",
-    description: "Spearheaded the migration of legacy client suites to Next.js & TypeScript, cutting load times by 55% across 12 core products.",
+    period: "2024 — 2026",
+    role: "Lead Full-Stack Developer & Hackathon Winner",
+    company: "TCET Pragati 2.0 & National Hackathons",
+    description: "Spearheaded rapid MVP architecture under 36-hour sprint constraints to win Track Winner honors at Pragati 2.0 BUILD-IT-ON and competed nationally in ISRO BAH 2026.",
   },
   {
-    period: "2020 — 2022",
-    role: "UI/UX Engineer",
-    company: "Vanguard Creative",
-    description: "Crafted interactive web experiences, bespoke component libraries, and motion systems for venture-backed startups.",
+    period: "2023 — PRESENT",
+    role: "B.Tech Computer Science & Engineering",
+    company: "University Engineering Institute",
+    description: "Pursuing rigorous coursework in Data Structures & Algorithms, Relational DBMS (PostgreSQL/SQL), Systems Architecture, and Modern Full-Stack Web Development.",
   },
 ];
 
 export const testimonials = [
   {
-    quote: "A rare combination of clean engineering and strong visual direction. He delivered our analytics UI 2 weeks ahead of schedule and with zero bugs.",
-    name: "Daniel Kovacs",
-    role: "Founder @ Najm Analytics",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    quote: "Aarav demonstrated exceptional engineering velocity at Pragati 2.0. His team delivered a scalable AI career guidance platform in 36 hours with zero downtime.",
+    name: "Hackathon Evaluation Jury",
+    role: "Track Judging Panel @ Pragati 2.0 BUILD-IT-ON",
+    avatar: "/images/CERTIFICATES/TCET_HACKATHON_WIN.webp",
   },
   {
-    quote: "The website upgrade made our AI product feel considerably more premium and helped us close our Series A funding round effortlessly.",
-    name: "Elena Rostova",
-    role: "CEO @ Kavi AI",
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
+    quote: "Remarkable speed in shipping full-stack prototypes. Aarav combines clean component architecture with strong API and database discipline.",
+    name: "Dev Collaboration Peer",
+    role: "Open Source Contributor @ GreenNova Ecosystem",
+    avatar: "/images/Greenova.webp",
   },
   {
-    quote: "Unmatched attention to detail. The custom GSAP scroll animations and responsive polish were praised across our entire engineering department.",
-    name: "Marcus Vance",
-    role: "VP of Engineering @ PostWing",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+    quote: "Demonstrates deep curiosity for machine learning and systems. His work on local LLM inference and telemetry visualizers sets a high technical standard.",
+    name: "Engineering Mentor",
+    role: "Technical Advisor @ Campus Tech Community",
+    avatar: "/images/profile.webp",
   },
 ];
 
 export const thoughts = [
   {
     id: "building-trust",
-    date: "May 5, 2026",
+    date: "Jan 14, 2026",
     readTime: "4 min read",
     title: "Building Trust Through Clear Design & Motion",
     summary: "Why purposeful micro-interactions and cognitive clarity convert users better than flashy gimmickry.",
@@ -365,7 +365,7 @@ export const thoughts = [
   },
   {
     id: "art-direction",
-    date: "Jun 16, 2026",
+    date: "Feb 22, 2026",
     readTime: "6 min read",
     title: "The Role of Art Direction in Modern SaaS Engineering",
     summary: "Bridging the gap between brand identity and component architecture to create unforgettable software.",
@@ -377,7 +377,7 @@ export const thoughts = [
   },
   {
     id: "brand-systems",
-    date: "Jul 02, 2026",
+    date: "Mar 08, 2026",
     readTime: "5 min read",
     title: "How High-Growth Teams Scale Resilient Design Systems",
     summary: "A blueprint for building tokenized component architectures that survive rapid product evolution.",

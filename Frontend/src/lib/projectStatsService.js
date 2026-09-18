@@ -158,8 +158,9 @@ export function subscribeToProjectStats(onUpdate) {
   // 1. Supabase Realtime Channel
   if (isSupabaseConfigured && supabase) {
     try {
+      const channelId = `realtime:project_stats:${Math.random().toString(36).substring(2, 9)}`;
       const channel = supabase
-        .channel("public:project_stats")
+        .channel(channelId)
         .on(
           "postgres_changes",
           { event: "*", schema: "public", table: "project_stats" },
