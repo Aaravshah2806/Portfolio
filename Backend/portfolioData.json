@@ -171,13 +171,13 @@
       "number": "01",
       "shortTitle": "DreamCatcher",
       "title": "DreamCatcher — AI Guidance & Career Platform",
-      "subtitle": "Hackathon Track Winner (Pragati 2.0)",
+      "subtitle": "Hackathon Project (Ignite 8.0)",
       "category": "AI & EdTech",
       "year": "2026",
-      "role": "Lead Full-Stack & AI Developer",
-      "client": "Pragati 2.0 BUILD-itON Hackathon (TCET)",
+      "role": "Web Application Lead (Multi-Platform)",
+      "client": "Ignite 8.0 Hackathon",
       "tagline": "Big Dreams. Catch Them Here. Personalized AI Career Guidance & Multilingual Roadmaps.",
-      "description": "An AI-powered career counseling and guidance platform engineered to empower students with personalized career pathway roadmaps, intelligent intake wizards, counseling personas, and multilingual accessibility (including Hindi & Marathi). Awarded Track Winner honors at Pragati 2.0 BUILD-itON.",
+      "description": "An AI-powered career counseling and guidance platform built at the Ignite 8.0 hackathon. Developed as a comprehensive multi-platform solution, I contributed by engineering the responsive website and web platform, featuring personalized career pathway roadmaps, intelligent intake wizards, counseling personas, and multilingual accessibility (including Hindi & Marathi).",
       "image": "/images/DreamCatcher.webp",
       "gradient": "linear-gradient(135deg, #f5f0eb 0%, #e2d9cd 50%, #1f1d1a 100%)",
       "accentColor": "#ea580c",
@@ -191,20 +191,20 @@
       ],
       "metrics": [
         {
-          "label": "Sprint Duration",
-          "value": "36 Hours"
+          "label": "Hackathon",
+          "value": "Ignite 8.0"
         },
         {
-          "label": "Hackathon Result",
-          "value": "Track Winner"
+          "label": "Contribution",
+          "value": "Web Platform"
         },
         {
-          "label": "Languages",
-          "value": "Hindi & Marathi"
+          "label": "Architecture",
+          "value": "Multi-Platform"
         }
       ],
-      "challenges": "Creating a seamless multimodal career counseling intake wizard with multilingual support and interactive pathway roadmaps within a rapid 36-hour hackathon sprint.",
-      "solution": "Architected a decoupled React and FastAPI system with intelligent suggestion cards, dynamic persona matching, and lightweight client-side rendering for responsive device previews.",
+      "challenges": "Creating a seamless multimodal career counseling intake wizard with multilingual support and interactive pathway roadmaps within a rapid hackathon sprint for a multi-platform ecosystem.",
+      "solution": "Architected and built the full web application interface with dynamic suggestion cards, persona matching, and responsive device layouts to seamlessly power the multi-platform system.",
       "liveUrl": "",
       "githubUrl": "https://github.com/Aaravshah2806"
     },
@@ -255,40 +255,40 @@
       "number": "03",
       "shortTitle": "GreenNova",
       "title": "GreenNova — AI Sustainability & Carbon Intelligence",
-      "subtitle": "EcoTech Mobile & Extension Ecosystem",
+      "subtitle": "Hackathon Track Winner (Pragati 2.0)",
       "category": "AI & Sustainability",
       "year": "2026",
-      "role": "Lead AI & Cross-Platform Engineer",
-      "client": "Open Source EcoTech Project",
-      "tagline": "Local LLM sustainability scoring, barcode ingredient OCR, and carbon footprint telemetry.",
-      "description": "An AI-powered consumer intelligence ecosystem comprising a Manifest V3 Chrome Extension and cross-platform Flutter mobile app. Analyzes e-commerce products (Amazon/Flipkart) and barcodes in real-time, executing local Gemma 3 LLM inference via Ollama to generate instant sustainability grades (A–E) and lifecycle carbon impact reports.",
+      "role": "Lead Web Developer (Multi-Platform)",
+      "client": "Pragati 2.0 BUILD-itON (Track Winner)",
+      "tagline": "Winning AI sustainability project at Pragati 2.0 — Local LLM scoring & carbon telemetry.",
+      "description": "Engineered for my winning hackathon Pragati 2.0 BUILD-itON, GreenNova is an AI-powered sustainability and consumer intelligence ecosystem. Conceived as a multi-platform solution spanning web, mobile, and browser extensions, I contributed by developing the responsive website and web platform, integrating real-time carbon telemetry, product analysis, and local Gemma 3 AI inference.",
       "image": "/images/Greenova.webp",
       "gradient": "linear-gradient(135deg, #064e3b 0%, #047857 45%, #022c22 100%)",
       "accentColor": "#10b981",
       "tags": [
+        "React",
         "Flutter",
         "Chrome Extension",
         "Ollama AI",
         "Gemma 3",
-        "Python / FastAPI",
-        "Dart"
+        "Python / FastAPI"
       ],
       "metrics": [
         {
-          "label": "Local AI Model",
-          "value": "Gemma 3 (Ollama)"
+          "label": "Hackathon Result",
+          "value": "Track Winner 🏆"
         },
         {
-          "label": "Eco Grade Accuracy",
-          "value": "A–E Lifecycle"
+          "label": "Hackathon",
+          "value": "Pragati 2.0 (TCET)"
         },
         {
-          "label": "Platforms",
-          "value": "Mobile + Chrome Ext"
+          "label": "Contribution",
+          "value": "Web Platform"
         }
       ],
-      "challenges": "Performing ultra-low latency local LLM inference for live webpage DOM elements without blocking user interactions or exhausting mobile memory limits.",
-      "solution": "Engineered a streaming Ollama background worker pipeline in Manifest V3 with smart memory caching, paired with optimized Flutter Hive offline-first data stores.",
+      "challenges": "Building a responsive, real-time web dashboard unifying multi-platform telemetry, live sustainability grading, and local LLM inference under 36-hour hackathon constraints.",
+      "solution": "Engineered the web application with dynamic carbon footprint visualizers, responsive UI components, and low-latency API integration connecting the multi-platform ecosystem.",
       "liveUrl": "",
       "githubUrl": "https://github.com/Aaravshah2806/Greenova"
     },
@@ -381,13 +381,13 @@
       "number": "06",
       "shortTitle": "ZealFlow",
       "title": "ZealFlow — Intelligent Workflow & Task Automation Engine",
-      "subtitle": "Automation & Productivity Suite",
+      "subtitle": "Hackathon Project (EnCode ACM)",
       "category": "Automation & Productivity",
       "year": "2026",
-      "role": "Full-Stack & Systems Developer",
-      "client": "Open Source Project",
-      "tagline": "Streamline engineering pipelines, task orchestration, and automated event triggers.",
-      "description": "An intelligent workflow automation platform designed to orchestrate developer tasks, asynchronous pipelines, event-driven webhooks, and productivity metrics. Features a visual pipeline monitor and real-time execution telemetry to eliminate development bottlenecks.",
+      "role": "Lead Web Developer (Multi-Platform)",
+      "client": "EnCode ACM Hackathon (Mukesh Patel College)",
+      "tagline": "Intelligent Workflow & Task Automation — Built at EnCode ACM (Mukesh Patel College)",
+      "description": "Developed alongside my team at the EnCode ACM hackathon held at Mukesh Patel College, ZealFlow is an intelligent workflow and task automation engine. Within this multi-platform project, I contributed by building the responsive website and web application, featuring interactive pipeline monitoring, task orchestration interfaces, and real-time execution telemetry.",
       "image": "/images/ZealFlow.webp",
       "gradient": "linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #431407 100%)",
       "accentColor": "#fb923c",
@@ -401,20 +401,20 @@
       ],
       "metrics": [
         {
-          "label": "Execution Speed",
-          "value": "<45ms"
+          "label": "Hackathon",
+          "value": "EnCode ACM"
         },
         {
-          "label": "Workflow Uptime",
-          "value": "99.9%"
+          "label": "Venue",
+          "value": "Mukesh Patel College"
         },
         {
-          "label": "Pipeline Sync",
-          "value": "Realtime"
+          "label": "Contribution",
+          "value": "Web Platform"
         }
       ],
-      "challenges": "Handling high-throughput concurrent webhook triggers and maintaining idempotent DAG task execution across asynchronous workers.",
-      "solution": "Designed event-driven asynchronous queues, robust payload validators, and interactive React pipeline state visualizers.",
+      "challenges": "Architecting an intuitive, real-time responsive web dashboard for a multi-platform automation engine under rapid hackathon time constraints.",
+      "solution": "Designed an interactive React web frontend featuring dynamic pipeline state visualizers, execution flowcharts, and real-time webhook status indicators.",
       "liveUrl": "",
       "githubUrl": "https://github.com/Aaravshah2806"
     }
@@ -434,7 +434,7 @@
   ],
   "testimonials": [
     {
-      "quote": "Aarav demonstrated exceptional engineering velocity at Pragati 2.0. His team delivered a scalable AI career guidance platform in 36 hours with zero downtime.",
+      "quote": "Aarav demonstrated exceptional engineering velocity at Pragati 2.0. His team delivered an innovative AI sustainability and carbon intelligence platform with high technical precision.",
       "name": "Hackathon Evaluation Jury",
       "role": "Track Judging Panel @ Pragati 2.0 BUILD-IT-ON",
       "avatar": "/images/CERTIFICATES/TCET_HACKATHON_WIN.webp"

@@ -9,17 +9,19 @@ A modern, high-performance interactive developer portfolio featuring 3D ambient 
 ## 🌟 Featured Projects
 
 1. **DreamCatcher** — *AI Guidance & Multilingual Career Platform*
-   - **Track Winner** at Pragati 2.0 BUILD-itON Hackathon (TCET).
+   - Built for the **Ignite 8.0 Hackathon** as a multi-platform project; contributed by developing the responsive website and web application.
    - React, FastAPI, Python, AI Counseling Personas, Multilingual (Hindi & Marathi).
 2. **GameBoy WebOS** — *Retro 8-Bit Handheld In-Browser Operating System*
    - Nostalgic 80s arcade UI with CSS3 3D perspective grids, pixel art window management, and retro mini-apps.
 3. **GreenNova** — *AI Sustainability & Carbon Tracking Platform*
-   - Manifest V3 Chrome Extension scoring e-commerce products (Amazon/Flipkart) with local Gemma 3:12B LLM inference via Ollama + Flutter cross-platform mobile app.
+   - **Track Winner** at **Pragati 2.0 BUILD-itON Hackathon (TCET)**.
+   - Multi-platform project (Web, Mobile Flutter app, Manifest V3 Chrome Extension) with local Gemma 3:12B LLM inference via Ollama; contributed by building the web platform and real-time carbon intelligence.
 4. **VibeDocs** — *AI-Driven Documentation & README Studio*
    - Dynamic repository structure analysis, Vibe Score calculations, and one-click GitHub push.
 5. **F1 Race Replay** — *High-Frequency Formula 1 Telemetry & Race Visualizer*
    - Ingests 20Hz FastF1 telemetry streams to simulate Grand Prix races with live delta charts, tyre degradation curves, and DRS tracking.
 6. **ZealFlow** — *Intelligent Workflow & Task Automation Engine*
+   - Developed with team at the **EnCode ACM Hackathon (Mukesh Patel College)** as a multi-platform project; contributed by engineering the responsive website and pipeline monitoring platform.
    - Asynchronous pipeline orchestration, webhook ingest triggers, and sub-45ms execution telemetry.
 
 ---

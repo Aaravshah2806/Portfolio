@@ -32,7 +32,7 @@ function BrowserFrame({ url, badge, badgeColor, children }) {
 export function DreamcatcherMockup() {
   return (
     <div className="mockup-screen mockup-dreamcatcher-showcase">
-      <BrowserFrame url="dreamcatcher.ai/guidance" badge="🏆 Hackathon Track Winner" badgeColor="#ea580c">
+      <BrowserFrame url="dreamcatcher.ai/guidance" badge="⚡ Ignite 8.0 Hackathon" badgeColor="#ea580c">
         <img
           src="/images/DreamCatcher.webp"
           alt="DreamCatcher AI Career Guidance Platform"
@@ -66,7 +66,7 @@ export function GameboyMockup() {
 export function GreenNovaMockup() {
   return (
     <div className="mockup-screen mockup-greenova-showcase">
-      <BrowserFrame url="greenova.eco/extension" badge="🌱 Gemma 3:12B Live" badgeColor="#10b981">
+      <BrowserFrame url="greenova.eco/web" badge="🏆 Pragati Track Winner" badgeColor="#10b981">
         <img
           src="/images/Greenova.webp"
           alt="GreenNova AI Sustainability Platform"
@@ -117,7 +117,7 @@ export function F1RaceReplayMockup() {
 export function ZealFlowMockup() {
   return (
     <div className="mockup-screen mockup-zealflow-showcase">
-      <BrowserFrame url="zealflow.io/pipelines" badge="⚡ 38ms Telemetry" badgeColor="#fb923c">
+      <BrowserFrame url="zealflow.io/pipelines" badge="⚡ EnCode ACM Hackathon" badgeColor="#fb923c">
         <img
           src="/images/ZealFlow.webp"
           alt="ZealFlow Intelligent Workflow Automation"
