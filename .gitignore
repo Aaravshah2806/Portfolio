@@ -75,3 +75,5 @@ desktop.ini
 *.njsproj
 *.sln
 *.sw?
+
+implementation_plan.md
