@@ -525,18 +525,125 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 640px) {
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
   .ai-assistant-container {
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    gap: 1rem;
   }
 
   .mascot-trigger {
-    height: 130px;
+    height: 140px;
   }
 
   .chat-panel {
-    width: calc(100vw - 2rem);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    height: 520px;
+    max-height: calc(100dvh - 4rem);
+    border-radius: 20px 20px 0 0;
+    transform: translateY(100%) scale(1);
+  }
+
+  .chat-panel.open {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Large Phones (<= 640px) */
+@media (max-width: 640px) {
+  .ai-assistant-container {
+    bottom: 1rem;
+    left: auto;
+    right: 4.5rem;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .mascot-trigger {
+    height: 90px;
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  .mascot-trigger:hover {
+    transform: scale(1.06) translateY(-2px);
+  }
+
+  .chat-panel {
     height: 480px;
+    max-height: calc(100dvh - 3rem);
+  }
+
+  .chat-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .chat-suggestions-bar {
+    padding: 0.5rem 0.75rem;
+    gap: 0.35rem;
+  }
+
+  .suggestion-chip {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.55rem;
+  }
+
+  .chat-input-form {
+    padding: 0.7rem 0.85rem;
+    padding-bottom: max(0.7rem, env(safe-area-inset-bottom, 0.7rem));
+  }
+
+  .chat-input-form input {
+    min-height: 44px;
+    font-size: 16px !important;
+  }
+
+  .chat-input-form button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .ai-assistant-container {
+    right: 3.5rem;
+    bottom: 0.75rem;
+  }
+
+  .mascot-trigger {
+    height: 75px;
+  }
+
+  .chat-panel {
+    height: 460px;
+    max-height: calc(100dvh - 2rem);
+  }
+}
+
+/* Hover guards: disable hover effects on touch */
+@media (hover: none) {
+  .mascot-trigger:hover {
+    transform: none;
+  }
+
+  .mascot-trigger:active {
+    transform: scale(0.95);
+  }
+
+  .suggestion-chip:hover:not(:disabled) {
+    transform: none;
+  }
+
+  .suggestion-chip:active:not(:disabled) {
+    background: rgba(228, 91, 43, 0.2);
+    border-color: rgba(228, 91, 43, 0.4);
   }
 }
