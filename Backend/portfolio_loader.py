@@ -20,18 +20,41 @@ def get_portfolio_data_path() -> str:
     return os.path.abspath(candidates[0])
 
 def load_raw_portfolio_data() -> Dict[str, Any]:
-    """Loads and converts portfolioData.js into a Python dictionary."""
+    """Loads and converts portfolioData into a Python dictionary.
+    First checks for a bundled portfolioData.json in the backend directory for fast,
+    zero-dependency cloud deployment (e.g. Render). Falls back to Node.js subprocess
+    if running in a dev monorepo without a JSON bundle.
+    """
     global _CACHED_DATA, _CACHED_MTIME
-    file_path = get_portfolio_data_path()
     
+    # 1. Primary path: Bundled portfolioData.json in backend directory
+    json_candidates = [
+        os.path.join(os.path.dirname(__file__), "portfolioData.json"),
+        os.path.abspath("portfolioData.json"),
+    ]
+    for json_path in json_candidates:
+        if os.path.exists(json_path):
+            try:
+                current_mtime = os.path.getmtime(json_path)
+                if _CACHED_DATA is not None and current_mtime == _CACHED_MTIME:
+                    return _CACHED_DATA
+                with open(json_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    _CACHED_DATA = data
+                    _CACHED_MTIME = current_mtime
+                    return data
+            except Exception as e:
+                print(f"[portfolio_loader] Error reading {json_path}: {e}")
+
+    # 2. Fallback: Dynamic Node.js module import from Frontend/src/data/portfolioData.js
+    file_path = get_portfolio_data_path()
     if not os.path.exists(file_path):
-        return {}
+        return _CACHED_DATA if _CACHED_DATA else {}
 
     current_mtime = os.path.getmtime(file_path)
     if _CACHED_DATA is not None and current_mtime == _CACHED_MTIME:
         return _CACHED_DATA
 
-    # Method: Use Node.js to import and stringify ES Module directly
     try:
         from pathlib import Path
         file_uri = Path(file_path).resolve().as_uri()

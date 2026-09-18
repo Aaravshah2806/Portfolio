@@ -179,7 +179,8 @@ const ChatPanel = ({ isOpen, onClose }) => {
         content: m.content
       }));
 
-      const response = await fetch('http://localhost:8000/chat', {
+      const backendUrl = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000').replace(/\/+$/, '');
+      const response = await fetch(`${backendUrl}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -205,7 +206,7 @@ const ChatPanel = ({ isOpen, onClose }) => {
         ...prev,
         { 
           role: 'ai', 
-          content: "⚠️ Could not connect to the assistant backend. Please check if the local server is active on `localhost:8000`." 
+          content: "⚠️ Could not connect to the assistant backend. If this service is newly hosted, it may take ~30 seconds to wake up from cold start. You can also reach out to Aarav at **shahaarav2806@gmail.com**." 
         }
       ]);
     } finally {

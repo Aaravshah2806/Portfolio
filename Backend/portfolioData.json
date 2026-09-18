@@ -1,0 +1,493 @@
+{
+  "certifications": [
+    {
+      "number": "01",
+      "badge": "CERTIFICATE OF ACHIEVEMENT",
+      "shortTitle": "Pragati 2.0 BUILD-itON",
+      "title": "Pragati 2.0 BUILD-itON Hackathon: Thakur College of Engineering & Technology",
+      "issuer": "TCET-EWT Extension",
+      "issued": "2026",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Recognized as the Track Winner at Pragati 2.0 BUILD-itON, a high-impact hackathon focused on engineering AI solutions for Social Impact & Sustainability.",
+      "longDescription": "Awarded first-place track honors for engineering a functional, scalable MVP centered around artificial intelligence and sustainable technology. The solution stood out under judging evaluation for its clean code implementation, immediate real-world utility, and robust architectural layout under competitive hackathon pressure.",
+      "image": "/images/CERTIFICATES/TCET_HACKATHON_WIN.webp"
+    },
+    {
+      "number": "02",
+      "badge": "CERTIFICATE OF PARTICIPATION",
+      "shortTitle": "BAH 2026",
+      "title": "Bharatiya Antariksh Hackathon 2026: ISRO & Hack2skill",
+      "issuer": "Indian Space Research Organisation (ISRO)",
+      "issued": "2026",
+      "previewTone": "linear-gradient(135deg, #FF9933 0%, #138808 100%)",
+      "description": "Recognized for a successful idea submission tackling critical real-world space challenges in a national innovation initiative.",
+      "longDescription": "Earned national recognition from ISRO for engineering a viable solution targeted at complex space-tech bottlenecks. This hackathon validated my ability to research deeply, build under constraint, and propose structured, scalable concepts for high-stakes engineering domains.",
+      "image": "/images/CERTIFICATES/BAH_CERT.webp"
+    },
+    {
+      "number": "03",
+      "badge": "VERIFIED BADGE / CERTIFICATE",
+      "shortTitle": "Data Fundamentals",
+      "title": "Data Fundamentals: IBM SkillsBuild",
+      "issuer": "IBM",
+      "issued": "2025",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Earned an industry-recognized credential validating foundational data literacy, analytical structures, and modern data ecosystems.",
+      "longDescription": "Demonstrated professional excellence in core data methodologies. The certification validates an operational understanding of how organizations harvest, process, and leverage structured data to solve complex technical challenges and make data-driven engineering choices.",
+      "image": "/images/CERTIFICATES/IBM_DF.webp"
+    },
+    {
+      "number": "04",
+      "badge": "CERTIFICATE OF PARTICIPATION",
+      "shortTitle": "Cyber Cypher 5.0",
+      "title": "Cyber Cypher 5.0: NMIMS MPSTME (Taqneeq 18.0)",
+      "issuer": "NMIMS MPSTME & Unstop DevHub",
+      "issued": "2026",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Participated in an intense 18-hour national hackathon tackling rapid software engineering challenges during Taqneeq 18.0 at NMIMS MPSTME.",
+      "longDescription": "Collaborated in an intense, fast-paced environment to conceptualize and develop an operational solution under a strict 18-hour deadline. This experience honed my ability to make quick architectural decisions, manage tight project constraints, and ship viable code under pressure.",
+      "image": "/images/CERTIFICATES/Taqneeq_hackathon.webp"
+    },
+    {
+      "number": "05",
+      "badge": "CERTIFICATE OF COURSE COMPLETION",
+      "shortTitle": "Introduction to Cybersecurity",
+      "title": "Introduction to Cybersecurity: Cisco Networking Academy",
+      "issuer": "Cisco Networking Academy",
+      "issued": "2025",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Earned a verified student-level credential from Cisco validating operational foundational knowledge in modern network security and threat management.",
+      "longDescription": "Demonstrated proficiency in evaluating cyber threats, defensive vulnerabilities, and digital asset safety. The certification verifies a solid understanding of how modern organizations build robust protocols to secure corporate infrastructures against systematic network attacks.",
+      "image": "/images/CERTIFICATES/CISCO_CYBERSECURITY.webp"
+    },
+    {
+      "number": "06",
+      "badge": "CERTIFICATE OF PARTICIPATION",
+      "shortTitle": "Ignite IT 7.0",
+      "title": "Hackathon: SVKM's Shri Bhagubhai Mafatlal Polytechnic",
+      "issuer": "Information Technology Department, SBMP",
+      "issued": "2025",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Participated in the flagship technical hackathon event during the Ignite IT 7.0 fest, organized by the Information Technology Department.",
+      "longDescription": "Engaged in an intensive collaborative sprint focused on rapid software development and engineering solutions. The experience emphasized working effectively under structured constraints, developing practical application logic, and collaborating closely with peers within a fast-paced environment.",
+      "image": "/images/CERTIFICATES/Ignite_hacakthon_2025.webp"
+    },
+    {
+      "number": "07",
+      "badge": "CERTIFICATE OF EXCELLENCE",
+      "shortTitle": "Code Prism (Spectrum 4.0)",
+      "title": "Code Prism: SVKM's Shri Bhagubhai Mafatlal Polytechnic",
+      "issuer": "SVKM's SBMP & College of Engineering",
+      "issued": "2025",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Awarded a Certificate of Excellence for standout technical execution and algorithmic performance in the Code Prism competition at Spectrum 4.0.",
+      "longDescription": "Recognized for high-caliber technical performance in an intensive competitive coding environment. This event tested advanced problem-solving, structural optimization under execution constraints, and the ability to rapidly write robust, production-grade logic under pressure.",
+      "image": "/images/CERTIFICATES/Specturm_CP.webp"
+    },
+    {
+      "number": "08",
+      "badge": "CERTIFICATE OF ACCOMPLISHMENT",
+      "shortTitle": "SQL (Intermediate)",
+      "title": "SQL (Intermediate) Skill Certification: HackerRank",
+      "issuer": "HackerRank",
+      "issued": "2025",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Successfully cleared the intermediate-level standardized technical assessment from HackerRank, proving proficiency in advanced data joining and complex query structures.",
+      "longDescription": "Validated advanced relational database engineering capabilities under timed algorithmic review. This credential certifies practical expertise in constructing complex subqueries, nested query architecture, advanced multi-table joins, conditional formatting logic, and optimizing search performance metrics.",
+      "image": "/images/CERTIFICATES/SQL(Intermediate).webp"
+    },
+    {
+      "number": "09",
+      "badge": "CERTIFICATE OF ACCOMPLISHMENT",
+      "shortTitle": "SQL (Basic)",
+      "title": "SQL (Basic) Skill Certification: HackerRank",
+      "issuer": "HackerRank",
+      "issued": "2025",
+      "previewTone": "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)",
+      "description": "Successfully passed the standardized HackerRank skill certification test validating operational mastery of relational database queries and fundamental data sorting algorithms.",
+      "longDescription": "Demonstrated technical competency in foundational relational database logic. This verification covers structured syntax execution, standard filtering parameters, relational data retrieval patterns, and fundamental data aggregation techniques across server tables.",
+      "image": "/images/CERTIFICATES/SQL(Basic).webp"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2024 — PRESENT",
+      "role": "Staff Creative Engineer",
+      "company": "Studio Hyperion",
+      "description": "Leading frontend architecture and interactive design for Fortune 500 product launches and high-scale SaaS applications."
+    },
+    {
+      "period": "2022 — 2024",
+      "role": "Senior Frontend Developer",
+      "company": "Nexus Labs",
+      "description": "Spearheaded the migration of legacy client suites to Next.js & TypeScript, cutting load times by 55% across 12 core products."
+    },
+    {
+      "period": "2020 — 2022",
+      "role": "UI/UX Engineer",
+      "company": "Vanguard Creative",
+      "description": "Crafted interactive web experiences, bespoke component libraries, and motion systems for venture-backed startups."
+    }
+  ],
+  "personalInfo": {
+    "name": "Aarav Shah",
+    "role": "Student in Computer Science Enginnering",
+    "tagline": "Curious about Machines, Coffee and Clean Code",
+    "status": "Avaliable for Intership",
+    "location": "Mumbai, India",
+    "timezone": "Asia/Kolkata",
+    "email": "shahaarav2806@gmail.com",
+    "github": "https://github.com/Aaravshah2806",
+    "linkedin": "https://www.linkedin.com/in/aaravshahce/",
+    "leetcode": "https://leetcode.com/u/Aaravshah2806/",
+    "instagram": "https://instagram.com",
+    "twitter": "https://x.com",
+    "youtube": "https://youtube.com",
+    "bioHeadline": "Hey! I am a computer science student from Mumbai, India with a passion for building cool stuff.",
+    "bioSub": "I am a computer science student from Mumbai, India with a passion for building cool stuff. I am a quick learner and a team player. I am always looking for new opportunities to learn and grow. I love learning about new technologies and how they can be used to solve real-world problems. I am also a big fan of open source and try to contribute to open source projects whenever I can.",
+    "statement": "From idea to launch. Clean, scalable digital products built to move fast, stay simple, and perform in real-world use, driven by clarity, structured systems, and intentional design.",
+    "stats": [
+      {
+        "value": "6+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "10+",
+        "label": "Particpated in Hackathons"
+      },
+      {
+        "value": "1",
+        "label": "Hackathon Winner"
+      },
+      {
+        "value": "3+",
+        "label": "Domains"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "dreamcatcher",
+      "number": "01",
+      "shortTitle": "DreamCatcher",
+      "title": "DreamCatcher — AI Guidance & Career Platform",
+      "subtitle": "Hackathon Track Winner (Pragati 2.0)",
+      "category": "AI & EdTech",
+      "year": "2026",
+      "role": "Lead Full-Stack & AI Developer",
+      "client": "Pragati 2.0 BUILD-itON Hackathon (TCET)",
+      "tagline": "Big Dreams. Catch Them Here. Personalized AI Career Guidance & Multilingual Roadmaps.",
+      "description": "An AI-powered career counseling and guidance platform engineered to empower students with personalized career pathway roadmaps, intelligent intake wizards, counseling personas, and multilingual accessibility (including Hindi & Marathi). Awarded Track Winner honors at Pragati 2.0 BUILD-itON.",
+      "image": "/images/DreamCatcher.webp",
+      "gradient": "linear-gradient(135deg, #f5f0eb 0%, #e2d9cd 50%, #1f1d1a 100%)",
+      "accentColor": "#ea580c",
+      "tags": [
+        "React",
+        "FastAPI",
+        "Python",
+        "AI Guidance Engine",
+        "Tailwind CSS",
+        "Multilingual"
+      ],
+      "metrics": [
+        {
+          "label": "Sprint Duration",
+          "value": "36 Hours"
+        },
+        {
+          "label": "Hackathon Result",
+          "value": "Track Winner"
+        },
+        {
+          "label": "Languages",
+          "value": "Hindi & Marathi"
+        }
+      ],
+      "challenges": "Creating a seamless multimodal career counseling intake wizard with multilingual support and interactive pathway roadmaps within a rapid 36-hour hackathon sprint.",
+      "solution": "Architected a decoupled React and FastAPI system with intelligent suggestion cards, dynamic persona matching, and lightweight client-side rendering for responsive device previews.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Aaravshah2806"
+    },
+    {
+      "id": "gameboy-webos",
+      "number": "02",
+      "shortTitle": "GameBoy OS",
+      "title": "GameBoy WebOS — Retro 8-Bit Handheld Operating System",
+      "subtitle": "Interactive Web Experience",
+      "category": "Creative & Web App",
+      "year": "2026",
+      "role": "Creative Frontend Engineer",
+      "client": "Open Source Project",
+      "tagline": "A nostalgic 80s cyberpunk & GameBoy-inspired browser Web OS with interactive retro apps.",
+      "description": "An immersive in-browser web operating system inspired by classic handheld GameBoy consoles and vibrant retro-futuristic cyberpunk aesthetics. Built with animated 3D perspective grids, custom window management, pixel typography, and nostalgic interactive mini-apps.",
+      "image": "/images/GameBoy-WebOS.webp",
+      "gradient": "linear-gradient(135deg, #070913 0%, #150d2a 50%, #2a083b 100%)",
+      "accentColor": "#00ffff",
+      "tags": [
+        "JavaScript",
+        "HTML5 Canvas",
+        "CSS3 3D",
+        "Pixel Art",
+        "Retro UI",
+        "Web Audio"
+      ],
+      "metrics": [
+        {
+          "label": "Rendering",
+          "value": "60 FPS Smooth"
+        },
+        {
+          "label": "Aesthetic",
+          "value": "8-Bit Arcade"
+        },
+        {
+          "label": "Audio Engine",
+          "value": "Chiptune Synth"
+        }
+      ],
+      "challenges": "Creating lightweight CSS 3D perspective grid animations and responsive pixel-perfect window state machines without external runtime dependencies.",
+      "solution": "Leveraged hardware-accelerated CSS transforms, vanilla JavaScript event architectures, and modular DOM state listeners for desktop window controls.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Aaravshah2806/Gameboy-WebOS"
+    },
+    {
+      "id": "greenova",
+      "number": "03",
+      "shortTitle": "GreenNova",
+      "title": "GreenNova — AI Sustainability & Carbon Intelligence",
+      "subtitle": "EcoTech Mobile & Extension Ecosystem",
+      "category": "AI & Sustainability",
+      "year": "2026",
+      "role": "Lead AI & Cross-Platform Engineer",
+      "client": "Open Source EcoTech Project",
+      "tagline": "Local LLM sustainability scoring, barcode ingredient OCR, and carbon footprint telemetry.",
+      "description": "An AI-powered consumer intelligence ecosystem comprising a Manifest V3 Chrome Extension and cross-platform Flutter mobile app. Analyzes e-commerce products (Amazon/Flipkart) and barcodes in real-time, executing local Gemma 3 LLM inference via Ollama to generate instant sustainability grades (A–E) and lifecycle carbon impact reports.",
+      "image": "/images/Greenova.webp",
+      "gradient": "linear-gradient(135deg, #064e3b 0%, #047857 45%, #022c22 100%)",
+      "accentColor": "#10b981",
+      "tags": [
+        "Flutter",
+        "Chrome Extension",
+        "Ollama AI",
+        "Gemma 3",
+        "Python / FastAPI",
+        "Dart"
+      ],
+      "metrics": [
+        {
+          "label": "Local AI Model",
+          "value": "Gemma 3 (Ollama)"
+        },
+        {
+          "label": "Eco Grade Accuracy",
+          "value": "A–E Lifecycle"
+        },
+        {
+          "label": "Platforms",
+          "value": "Mobile + Chrome Ext"
+        }
+      ],
+      "challenges": "Performing ultra-low latency local LLM inference for live webpage DOM elements without blocking user interactions or exhausting mobile memory limits.",
+      "solution": "Engineered a streaming Ollama background worker pipeline in Manifest V3 with smart memory caching, paired with optimized Flutter Hive offline-first data stores.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Aaravshah2806/Greenova"
+    },
+    {
+      "id": "vibedocs",
+      "number": "04",
+      "shortTitle": "VibeDocs",
+      "title": "VibeDocs — AI Documentation Generator",
+      "subtitle": "Developer Productivity SaaS",
+      "category": "Developer Tools",
+      "year": "2025",
+      "role": "Frontend & AI Architect",
+      "client": "Open Source Tool",
+      "tagline": "AI-driven README studio with repository intelligence, vibe checks, and dynamic badge presets.",
+      "description": "An AI-powered documentation suite that connects directly to GitHub repositories, analyzes code architecture and detected dependencies, computes repository Vibe Scores, and dynamically formats professional READMEs ready for one-click commits.",
+      "image": "/images/VibeDocs.webp",
+      "gradient": "linear-gradient(135deg, #1e1e2e 0%, #2b1b4a 50%, #0f111a 100%)",
+      "accentColor": "#a855f7",
+      "tags": [
+        "React",
+        "Python",
+        "FastAPI",
+        "GitHub API",
+        "Gemini AI",
+        "Tailwind CSS"
+      ],
+      "metrics": [
+        {
+          "label": "Vibe Score",
+          "value": "92/100 Rating"
+        },
+        {
+          "label": "Generation Speed",
+          "value": "<1.4 Seconds"
+        },
+        {
+          "label": "One-Click Sync",
+          "value": "GitHub Push"
+        }
+      ],
+      "challenges": "Summarizing deep multi-level file trees without exhausting AI LLM prompt tokens while preserving crucial architectural nuance.",
+      "solution": "Built a tree-summarizing preprocessing algorithm in Python FastAPI that packages repository manifests and entrypoints before invoking Gemini AI generation endpoints.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Aaravshah2806/VibeDocs"
+    },
+    {
+      "id": "f1-race-replay",
+      "number": "05",
+      "shortTitle": "F1 Replay",
+      "title": "F1 Race Replay & Telemetry Visualizer",
+      "subtitle": "Sports Telemetry Simulation",
+      "category": "Data & Visualization",
+      "year": "2025",
+      "role": "Lead Python Developer",
+      "client": "Open Source Project",
+      "tagline": "High-frequency Formula 1 race replay, telemetry insights, and track simulation.",
+      "description": "An interactive Formula 1 race replay and telemetry visualization tool built in Python. Ingests high-resolution FastF1 telemetry to simulate entire Grand Prix races with live driver positions, delta charts, tyre degradation curves, DRS status, and Safety Car animations across both GUI and CLI interfaces.",
+      "image": "/images/F1-race-replay.webp",
+      "gradient": "linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #450a0a 100%)",
+      "accentColor": "#f87171",
+      "tags": [
+        "Python",
+        "FastF1",
+        "Pandas",
+        "Pygame",
+        "Matplotlib",
+        "Telemetry Data"
+      ],
+      "metrics": [
+        {
+          "label": "Telemetry Freq",
+          "value": "10-20Hz"
+        },
+        {
+          "label": "Grid Tracking",
+          "value": "20 Drivers"
+        },
+        {
+          "label": "Historical Data",
+          "value": "2018-2025"
+        }
+      ],
+      "challenges": "Interpolating and time-aligning discontinuous GPS coordinates alongside high-frequency braking and throttle streams at smooth framerates.",
+      "solution": "Leveraged vectorized Pandas rolling interpolation and modular Pygame/GUI render passes with multi-channel telemetry streams.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Aaravshah2806/F1-Race-Replay-CLI"
+    },
+    {
+      "id": "zealflow",
+      "number": "06",
+      "shortTitle": "ZealFlow",
+      "title": "ZealFlow — Intelligent Workflow & Task Automation Engine",
+      "subtitle": "Automation & Productivity Suite",
+      "category": "Automation & Productivity",
+      "year": "2026",
+      "role": "Full-Stack & Systems Developer",
+      "client": "Open Source Project",
+      "tagline": "Streamline engineering pipelines, task orchestration, and automated event triggers.",
+      "description": "An intelligent workflow automation platform designed to orchestrate developer tasks, asynchronous pipelines, event-driven webhooks, and productivity metrics. Features a visual pipeline monitor and real-time execution telemetry to eliminate development bottlenecks.",
+      "image": "/images/ZealFlow.webp",
+      "gradient": "linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #431407 100%)",
+      "accentColor": "#fb923c",
+      "tags": [
+        "React",
+        "FastAPI",
+        "Python",
+        "Node.js",
+        "Webhooks",
+        "Workflow Engine"
+      ],
+      "metrics": [
+        {
+          "label": "Execution Speed",
+          "value": "<45ms"
+        },
+        {
+          "label": "Workflow Uptime",
+          "value": "99.9%"
+        },
+        {
+          "label": "Pipeline Sync",
+          "value": "Realtime"
+        }
+      ],
+      "challenges": "Handling high-throughput concurrent webhook triggers and maintaining idempotent DAG task execution across asynchronous workers.",
+      "solution": "Designed event-driven asynchronous queues, robust payload validators, and interactive React pipeline state visualizers.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Aaravshah2806"
+    }
+  ],
+  "techStack": [
+    "React",
+    "Python",
+    "JavaScript",
+    "PostgreSQL",
+    "Docker",
+    "Git & Github",
+    "Vite",
+    "MongoDB",
+    "Supabase",
+    "Linux",
+    "AWS Basic"
+  ],
+  "testimonials": [
+    {
+      "quote": "A rare combination of clean engineering and strong visual direction. He delivered our analytics UI 2 weeks ahead of schedule and with zero bugs.",
+      "name": "Daniel Kovacs",
+      "role": "Founder @ Najm Analytics",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "quote": "The website upgrade made our AI product feel considerably more premium and helped us close our Series A funding round effortlessly.",
+      "name": "Elena Rostova",
+      "role": "CEO @ Kavi AI",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "quote": "Unmatched attention to detail. The custom GSAP scroll animations and responsive polish were praised across our entire engineering department.",
+      "name": "Marcus Vance",
+      "role": "VP of Engineering @ PostWing",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+    }
+  ],
+  "thoughts": [
+    {
+      "id": "building-trust",
+      "date": "May 5, 2026",
+      "readTime": "4 min read",
+      "title": "Building Trust Through Clear Design & Motion",
+      "summary": "Why purposeful micro-interactions and cognitive clarity convert users better than flashy gimmickry.",
+      "content": [
+        "In high-stakes software, every fraction of a second matters. When a user clicks a button, a subtle 150ms physics-based easing feedback confirms intent without demanding conscious cognitive load.",
+        "Clarity isn't just about whitespace; it's about predictable state machines. When animations respect user intent and spatial hierarchy, interfaces feel tangible and reliable.",
+        "By removing arbitrary decorative motion and focusing exclusively on meaningful spatial transitions, we build digital products that feel effortless to navigate."
+      ]
+    },
+    {
+      "id": "art-direction",
+      "date": "Jun 16, 2026",
+      "readTime": "6 min read",
+      "title": "The Role of Art Direction in Modern SaaS Engineering",
+      "summary": "Bridging the gap between brand identity and component architecture to create unforgettable software.",
+      "content": [
+        "Many modern web applications suffer from template fatigue. When every SaaS app uses the exact same typography, border radius, and color palette, brand memorability drops to zero.",
+        "True art direction in web development involves treating the browser as a living canvas: pairing bold editorial typography with precise responsive fluid scaling (`clamp()`), and tailoring the scroll experience to the narrative.",
+        "When design tokens and code architecture work in harmony, engineers can ship innovative visual aesthetics without sacrificing maintainability."
+      ]
+    },
+    {
+      "id": "brand-systems",
+      "date": "Jul 02, 2026",
+      "readTime": "5 min read",
+      "title": "How High-Growth Teams Scale Resilient Design Systems",
+      "summary": "A blueprint for building tokenized component architectures that survive rapid product evolution.",
+      "content": [
+        "A design system should never be a static museum of components. It must be an active, living contract between product designers, engineers, and product managers.",
+        "The most resilient systems start with semantic tokens: separating raw color and spacing values from contextual intent (e.g., using `color-surface-hover` rather than hardcoded hex codes).",
+        "Investing early in automated visual regression tests and comprehensive documentation saves hundreds of hours of design debt down the road."
+      ]
+    }
+  ]
+}
