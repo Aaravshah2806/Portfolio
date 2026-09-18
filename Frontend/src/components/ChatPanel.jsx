@@ -3,14 +3,14 @@ import { Send, X, RotateCcw, Sparkles, User, Bot } from 'lucide-react';
 
 const SUGGESTIONS = [
   { label: "🛠️ Core Skills", query: "What are Aarav's core technical skills and technologies?" },
-  { label: "🏆 Hackathon Wins", query: "Tell me about Aarav's hackathon achievements and awards." },
+  { label: "🏆 Hackathons", query: "Tell me about Aarav's hackathons and achievements." },
   { label: "💻 Featured Projects", query: "What featured projects has Aarav built?" },
   { label: "📫 Contact & Hire", query: "How can I contact Aarav for internship or project opportunities?" }
 ];
 
 const INITIAL_MESSAGE = {
   role: 'ai',
-  content: "👋 Hi! I'm **Aarav's Portfolio Assistant**.\n\nAsk me anything about Aarav's skills, projects, hackathon wins, experience, or how to get in touch!"
+  content: "👋 Hi! I'm **Aarav's Portfolio Assistant**.\n\nAsk me anything about Aarav's skills, projects, hackathons, experience, or how to get in touch!"
 };
 
 // Parses inline markdown: bold, italics, code, links, emails, and handles html breaks
