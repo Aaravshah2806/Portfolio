@@ -1,5 +1,4 @@
 import { experience } from "../data/portfolioData";
-import { Briefcase } from "lucide-react";
 
 export function Experience() {
   return (

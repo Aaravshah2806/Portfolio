@@ -17,7 +17,7 @@ export function Hero() {
           hour12: true,
         }).format(now);
         setLocalTime(formatted);
-      } catch (e) {
+      } catch {
         setLocalTime(new Date().toLocaleTimeString());
       }
     };
@@ -56,10 +56,16 @@ export function Hero() {
         <div data-hero-photo className="hero-photo" data-cursor-hover>
           <div className="hero-photo-shine" />
           <img
-            src="/images/profile.png"
+            src="/images/profile.webp"
             alt={`${personalInfo.name} portrait`}
+            fetchPriority="high"
+            decoding="async"
             onError={(e) => {
-              // Fallback placeholder if profile.png is not found or fails to render
+              // Fallback to profile.png if webp fails, else show fallback placeholder
+              if (!e.currentTarget.src.endsWith(".png")) {
+                e.currentTarget.src = "/images/profile.png";
+                return;
+              }
               e.currentTarget.style.display = "none";
               e.currentTarget.parentElement.classList.add("has-fallback");
             }}

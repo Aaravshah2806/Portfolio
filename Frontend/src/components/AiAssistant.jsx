@@ -44,7 +44,13 @@ const AiAssistant = () => {
         onClick={toggleChat}
         onMouseEnter={() => !isOpen && setAction('wiggle')}
       >
-        <img src="/images/pixel_image-removebg-preview.png" alt="Interactive Mascot" className="mascot-img" />
+        <img
+          src="/images/pixel_image-removebg-preview.webp"
+          alt="Interactive Mascot"
+          className="mascot-img"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       
       <ChatPanel isOpen={isOpen} onClose={() => setIsOpen(false)} />

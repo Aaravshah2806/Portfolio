@@ -193,7 +193,7 @@ export function TextEffect({
   const itemVariants = variants?.item || activePreset.item || defaultItemVariants;
 
   // Split text based on `per` prop
-  let segments = [];
+  let segments;
   if (per === "char") {
     segments = Array.from(children);
   } else if (per === "word") {

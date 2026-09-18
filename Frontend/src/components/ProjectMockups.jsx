@@ -34,10 +34,11 @@ export function DreamcatcherMockup() {
     <div className="mockup-screen mockup-dreamcatcher-showcase">
       <BrowserFrame url="dreamcatcher.ai/guidance" badge="🏆 Hackathon Track Winner" badgeColor="#ea580c">
         <img
-          src="/images/DreamCatcher.png"
+          src="/images/DreamCatcher.webp"
           alt="DreamCatcher AI Career Guidance Platform"
           className="dreamcatcher-preview-image"
           loading="lazy"
+          decoding="async"
         />
       </BrowserFrame>
     </div>
@@ -50,10 +51,11 @@ export function GameboyMockup() {
     <div className="mockup-screen mockup-gameboy-showcase">
       <BrowserFrame url="gameboy-os.dev/web" badge="👾 60 FPS Retro WebOS" badgeColor="#00ffff">
         <img
-          src="/images/GameBoy-WebOS.png"
+          src="/images/GameBoy-WebOS.webp"
           alt="GameBoy WebOS Retro Operating System"
           className="gameboy-preview-image"
           loading="lazy"
+          decoding="async"
         />
       </BrowserFrame>
     </div>
@@ -66,10 +68,11 @@ export function GreenNovaMockup() {
     <div className="mockup-screen mockup-greenova-showcase">
       <BrowserFrame url="greenova.eco/extension" badge="🌱 Gemma 3:12B Live" badgeColor="#10b981">
         <img
-          src="/images/Greenova.png"
+          src="/images/Greenova.webp"
           alt="GreenNova AI Sustainability Platform"
           className="greenova-preview-image"
           loading="lazy"
+          decoding="async"
         />
       </BrowserFrame>
     </div>
@@ -82,10 +85,11 @@ export function VibeDocsMockup() {
     <div className="mockup-screen mockup-vibedocs-showcase">
       <BrowserFrame url="vibedocs.ai/readme-studio" badge="⚡ Vibe Score 92/100" badgeColor="#a855f7">
         <img
-          src="/images/VibeDocs.png"
+          src="/images/VibeDocs.webp"
           alt="VibeDocs AI Documentation Studio"
           className="vibedocs-preview-image"
           loading="lazy"
+          decoding="async"
         />
       </BrowserFrame>
     </div>
@@ -98,10 +102,11 @@ export function F1RaceReplayMockup() {
     <div className="mockup-screen mockup-f1-showcase">
       <BrowserFrame url="f1-replay.telemetry/live" badge="🏎️ 20Hz Telemetry" badgeColor="#f87171">
         <img
-          src="/images/F1-race-replay.png"
+          src="/images/F1-race-replay.webp"
           alt="F1 Race Replay & Telemetry Visualizer"
           className="f1-preview-image"
           loading="lazy"
+          decoding="async"
         />
       </BrowserFrame>
     </div>
@@ -114,10 +119,11 @@ export function ZealFlowMockup() {
     <div className="mockup-screen mockup-zealflow-showcase">
       <BrowserFrame url="zealflow.io/pipelines" badge="⚡ 38ms Telemetry" badgeColor="#fb923c">
         <img
-          src="/images/ZealFlow.png"
+          src="/images/ZealFlow.webp"
           alt="ZealFlow Intelligent Workflow Automation"
           className="zealflow-preview-image"
           loading="lazy"
+          decoding="async"
         />
       </BrowserFrame>
     </div>
@@ -148,7 +154,7 @@ export function ProjectMockup({ project }) {
       return (
         <div className="mockup-screen mockup-generic">
           <BrowserFrame url={project.title ? `${project.id}.app` : "app.local"}>
-            <img src={project.image} alt={project.title} loading="lazy" />
+            <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
           </BrowserFrame>
         </div>
       );

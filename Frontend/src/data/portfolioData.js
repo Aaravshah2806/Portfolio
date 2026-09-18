@@ -48,7 +48,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Recognized as the Track Winner at Pragati 2.0 BUILD-itON, a high-impact hackathon focused on engineering AI solutions for Social Impact & Sustainability.",
     longDescription: "Awarded first-place track honors for engineering a functional, scalable MVP centered around artificial intelligence and sustainable technology. The solution stood out under judging evaluation for its clean code implementation, immediate real-world utility, and robust architectural layout under competitive hackathon pressure.",
-    image: "/images/CERTIFICATES/TCET_HACKATHON_WIN.jpeg"
+    image: "/images/CERTIFICATES/TCET_HACKATHON_WIN.webp"
   },
   {
     number: "02", 
@@ -60,7 +60,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #FF9933 0%, #138808 100%)", 
     description: "Recognized for a successful idea submission tackling critical real-world space challenges in a national innovation initiative.",
     longDescription: "Earned national recognition from ISRO for engineering a viable solution targeted at complex space-tech bottlenecks. This hackathon validated my ability to research deeply, build under constraint, and propose structured, scalable concepts for high-stakes engineering domains.",
-    image: "/images/CERTIFICATES/BAH_CERT.jpeg"
+    image: "/images/CERTIFICATES/BAH_CERT.webp"
   },
   {
     number: "03",
@@ -72,7 +72,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Earned an industry-recognized credential validating foundational data literacy, analytical structures, and modern data ecosystems.",
     longDescription: "Demonstrated professional excellence in core data methodologies. The certification validates an operational understanding of how organizations harvest, process, and leverage structured data to solve complex technical challenges and make data-driven engineering choices.",
-    image: "/images/CERTIFICATES/IBM_DF.jpeg"
+    image: "/images/CERTIFICATES/IBM_DF.webp"
   },
   {
     number: "04",
@@ -84,7 +84,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Participated in an intense 18-hour national hackathon tackling rapid software engineering challenges during Taqneeq 18.0 at NMIMS MPSTME.",
     longDescription: "Collaborated in an intense, fast-paced environment to conceptualize and develop an operational solution under a strict 18-hour deadline. This experience honed my ability to make quick architectural decisions, manage tight project constraints, and ship viable code under pressure.",
-    image: "/images/CERTIFICATES/Taqneeq_hackathon.jpeg"
+    image: "/images/CERTIFICATES/Taqneeq_hackathon.webp"
   },
   {
     number: "05",
@@ -96,7 +96,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Earned a verified student-level credential from Cisco validating operational foundational knowledge in modern network security and threat management.",
     longDescription: "Demonstrated proficiency in evaluating cyber threats, defensive vulnerabilities, and digital asset safety. The certification verifies a solid understanding of how modern organizations build robust protocols to secure corporate infrastructures against systematic network attacks.",
-    image: "/images/CERTIFICATES/CISCO_CYBERSECURITY.jpeg"
+    image: "/images/CERTIFICATES/CISCO_CYBERSECURITY.webp"
   },
   {
     number: "06",
@@ -108,7 +108,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Participated in the flagship technical hackathon event during the Ignite IT 7.0 fest, organized by the Information Technology Department.",
     longDescription: "Engaged in an intensive collaborative sprint focused on rapid software development and engineering solutions. The experience emphasized working effectively under structured constraints, developing practical application logic, and collaborating closely with peers within a fast-paced environment.",
-    image: "/images/CERTIFICATES/Ignite_hacakthon_2025.jpeg"
+    image: "/images/CERTIFICATES/Ignite_hacakthon_2025.webp"
   },
   {
     number: "07",
@@ -120,7 +120,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Awarded a Certificate of Excellence for standout technical execution and algorithmic performance in the Code Prism competition at Spectrum 4.0.",
     longDescription: "Recognized for high-caliber technical performance in an intensive competitive coding environment. This event tested advanced problem-solving, structural optimization under execution constraints, and the ability to rapidly write robust, production-grade logic under pressure.",
-    image: "/images/CERTIFICATES/Specturm_CP.jpeg"
+    image: "/images/CERTIFICATES/Specturm_CP.webp"
   },
   {
     number: "08",
@@ -132,7 +132,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Successfully cleared the intermediate-level standardized technical assessment from HackerRank, proving proficiency in advanced data joining and complex query structures.",
     longDescription: "Validated advanced relational database engineering capabilities under timed algorithmic review. This credential certifies practical expertise in constructing complex subqueries, nested query architecture, advanced multi-table joins, conditional formatting logic, and optimizing search performance metrics.",
-    image: "./images/CERTIFICATES/SQL(Intermediate).jpeg"
+    image: "/images/CERTIFICATES/SQL(Intermediate).webp"
   },
   {
     number: "09",
@@ -144,7 +144,7 @@ export const certifications = [
     previewTone: "linear-gradient(135deg, #f3f1ea 0%, #e8e4dc 100%)", 
     description: "Successfully passed the standardized HackerRank skill certification test validating operational mastery of relational database queries and fundamental data sorting algorithms.",
     longDescription: "Demonstrated technical competency in foundational relational database logic. This verification covers structured syntax execution, standard filtering parameters, relational data retrieval patterns, and fundamental data aggregation techniques across server tables.",
-    image: "./images/CERTIFICATES/SQL(Basic).jpeg"
+    image: "/images/CERTIFICATES/SQL(Basic).webp"
   }
 ];
 
@@ -162,7 +162,7 @@ export const projects = [
     client: "Pragati 2.0 BUILD-itON Hackathon (TCET)",
     tagline: "Big Dreams. Catch Them Here. Personalized AI Career Guidance & Multilingual Roadmaps.",
     description: "An AI-powered career counseling and guidance platform engineered to empower students with personalized career pathway roadmaps, intelligent intake wizards, counseling personas, and multilingual accessibility (including Hindi & Marathi). Awarded Track Winner honors at Pragati 2.0 BUILD-itON.",
-    image: "/images/DreamCatcher.png",
+    image: "/images/DreamCatcher.webp",
     gradient: "linear-gradient(135deg, #f5f0eb 0%, #e2d9cd 50%, #1f1d1a 100%)",
     accentColor: "#ea580c",
     tags: ["React", "FastAPI", "Python", "AI Guidance Engine", "Tailwind CSS", "Multilingual"],
@@ -188,7 +188,7 @@ export const projects = [
     client: "Open Source Project",
     tagline: "A nostalgic 80s cyberpunk & GameBoy-inspired browser Web OS with interactive retro apps.",
     description: "An immersive in-browser web operating system inspired by classic handheld GameBoy consoles and vibrant retro-futuristic cyberpunk aesthetics. Built with animated 3D perspective grids, custom window management, pixel typography, and nostalgic interactive mini-apps.",
-    image: "/images/GameBoy-WebOS.png",
+    image: "/images/GameBoy-WebOS.webp",
     gradient: "linear-gradient(135deg, #070913 0%, #150d2a 50%, #2a083b 100%)",
     accentColor: "#00ffff",
     tags: ["JavaScript", "HTML5 Canvas", "CSS3 3D", "Pixel Art", "Retro UI", "Web Audio"],
@@ -214,7 +214,7 @@ export const projects = [
     client: "Open Source EcoTech Project",
     tagline: "Local LLM sustainability scoring, barcode ingredient OCR, and carbon footprint telemetry.",
     description: "An AI-powered consumer intelligence ecosystem comprising a Manifest V3 Chrome Extension and cross-platform Flutter mobile app. Analyzes e-commerce products (Amazon/Flipkart) and barcodes in real-time, executing local Gemma 3 LLM inference via Ollama to generate instant sustainability grades (A–E) and lifecycle carbon impact reports.",
-    image: "/images/Greenova.png",
+    image: "/images/Greenova.webp",
     gradient: "linear-gradient(135deg, #064e3b 0%, #047857 45%, #022c22 100%)",
     accentColor: "#10b981",
     tags: ["Flutter", "Chrome Extension", "Ollama AI", "Gemma 3", "Python / FastAPI", "Dart"],
@@ -240,7 +240,7 @@ export const projects = [
     client: "Open Source Tool",
     tagline: "AI-driven README studio with repository intelligence, vibe checks, and dynamic badge presets.",
     description: "An AI-powered documentation suite that connects directly to GitHub repositories, analyzes code architecture and detected dependencies, computes repository Vibe Scores, and dynamically formats professional READMEs ready for one-click commits.",
-    image: "/images/VibeDocs.png",
+    image: "/images/VibeDocs.webp",
     gradient: "linear-gradient(135deg, #1e1e2e 0%, #2b1b4a 50%, #0f111a 100%)",
     accentColor: "#a855f7",
     tags: ["React", "Python", "FastAPI", "GitHub API", "Gemini AI", "Tailwind CSS"],
@@ -266,7 +266,7 @@ export const projects = [
     client: "Open Source Project",
     tagline: "High-frequency Formula 1 race replay, telemetry insights, and track simulation.",
     description: "An interactive Formula 1 race replay and telemetry visualization tool built in Python. Ingests high-resolution FastF1 telemetry to simulate entire Grand Prix races with live driver positions, delta charts, tyre degradation curves, DRS status, and Safety Car animations across both GUI and CLI interfaces.",
-    image: "/images/F1-race-replay.png",
+    image: "/images/F1-race-replay.webp",
     gradient: "linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #450a0a 100%)",
     accentColor: "#f87171",
     tags: ["Python", "FastF1", "Pandas", "Pygame", "Matplotlib", "Telemetry Data"],
@@ -292,7 +292,7 @@ export const projects = [
     client: "Open Source Project",
     tagline: "Streamline engineering pipelines, task orchestration, and automated event triggers.",
     description: "An intelligent workflow automation platform designed to orchestrate developer tasks, asynchronous pipelines, event-driven webhooks, and productivity metrics. Features a visual pipeline monitor and real-time execution telemetry to eliminate development bottlenecks.",
-    image: "/images/ZealFlow.png",
+    image: "/images/ZealFlow.webp",
     gradient: "linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #431407 100%)",
     accentColor: "#fb923c",
     tags: ["React", "FastAPI", "Python", "Node.js", "Webhooks", "Workflow Engine"],
