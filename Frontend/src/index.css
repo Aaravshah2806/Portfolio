@@ -2773,35 +2773,41 @@ button {
 }
 
 .cv-modal-content {
-  width: min(880px, 95vw);
-  max-height: 90vh;
-  height: 90vh;
+  width: min(1060px, 96vw);
+  max-height: 94vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   padding: 0;
   overflow: hidden;
   border-radius: 20px;
+  background: var(--paper);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--line);
 }
 
 .cv-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 22px;
+  padding: 12px 20px;
   border-bottom: 1px solid var(--line);
   background: var(--modal-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   position: sticky;
   top: 0;
   z-index: 10;
   flex-shrink: 0;
+  gap: 12px;
 }
 
 .cv-toolbar-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
 }
 
 .cv-status-dot {
@@ -2810,35 +2816,43 @@ button {
   border-radius: 50%;
   background: #10b981;
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+  flex-shrink: 0;
 }
 
 .cv-toolbar-title {
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .cv-toolbar-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .cv-btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 7px 16px;
+  padding: 7px 15px;
   border-radius: 9999px;
   background: var(--ink);
-  color: var(--paper);
+  color: var(--paper) !important;
   font-size: 12px;
   font-weight: 700;
   border: none;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+  white-space: nowrap;
 }
 
 .cv-btn-primary:hover {
@@ -2850,15 +2864,17 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 7px 14px;
+  padding: 7px 13px;
   border-radius: 9999px;
   background: rgba(125, 125, 125, 0.08);
   border: 1px solid var(--line);
-  color: var(--ink);
+  color: var(--ink) !important;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
 }
 
 .cv-btn-secondary:hover {
@@ -2878,11 +2894,87 @@ button {
   color: var(--ink);
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .cv-close-btn:hover {
   background: rgba(125, 125, 125, 0.18);
   transform: rotate(90deg);
+}
+
+/* PDF Viewport & Embed */
+.cv-pdf-viewport {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #2a2b2f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-pdf-frame {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border: none;
+  display: block;
+}
+
+.cv-pdf-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 24px;
+  text-align: center;
+  height: 100%;
+  color: #a0a0ab;
+}
+
+.cv-pdf-fallback p {
+  font-size: 14px;
+  max-width: 340px;
+}
+
+.cv-fallback-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cv-modal-content {
+    width: 100vw;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  .cv-toolbar {
+    padding: 10px 14px;
+    flex-wrap: wrap;
+  }
+
+  .cv-toolbar-title {
+    display: none;
+  }
+
+  .cv-btn-label-desktop {
+    display: none;
+  }
+
+  .cv-btn-secondary {
+    padding: 7px 10px;
+  }
+
+  .cv-btn-primary {
+    padding: 7px 12px;
+    font-size: 11.5px;
+  }
 }
 
 .cv-scroll-area {

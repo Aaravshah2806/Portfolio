@@ -73,7 +73,7 @@ function App() {
     <div ref={root} className="site">
       <CustomCursor />
 
-      <Navbar />
+      <Navbar onOpenResume={() => setShowCVModal(true)} />
 
       <main>
         <Hero />
