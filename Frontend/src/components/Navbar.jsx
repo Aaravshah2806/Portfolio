@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-export function Navbar({ onOpenResume }) {
+export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownHeight, setDropdownHeight] = useState(0);
@@ -156,28 +156,6 @@ export function Navbar({ onOpenResume }) {
                 <span className="nav-link-label">{link.label}</span>
               </a>
             ))}
-            {onOpenResume && (
-              <button
-                type="button"
-                className="nav-link nav-resume-btn"
-                onClick={() => {
-                  close();
-                  onOpenResume();
-                }}
-                tabIndex={isOpen ? 0 : -1}
-                style={{
-                  transitionDelay: isOpen ? `${0.06 * (NAV_LINKS.length + 1)}s` : "0s",
-                  background: "transparent",
-                  border: "none",
-                  textAlign: "left",
-                  width: "100%",
-                  cursor: "pointer",
-                }}
-                data-cursor-hover
-              >
-                <span className="nav-link-label">Resume (PDF)</span>
-              </button>
-            )}
           </div>
         </div>
       </nav>

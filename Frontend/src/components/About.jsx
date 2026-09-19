@@ -44,7 +44,7 @@ export function About({ onOpenCV }) {
                 data-cursor-hover
               >
                 <FileText size={16} />
-                <span>View Resume</span>
+                <span>Preview CV</span>
               </button>
             </div>
           </div>
